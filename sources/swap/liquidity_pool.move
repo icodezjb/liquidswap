@@ -9,8 +9,8 @@ module liquidswap::liquidity_pool {
     use aptos_framework::timestamp;
 
     use liquidswap_lp::lp_coin::LP;
-    use u256::u256;
-    use uq64x64::uq64x64;
+    use liquidswap::u256;
+    use liquidswap::uq64x64;
 
     use liquidswap::coin_helper;
     use liquidswap::curves;

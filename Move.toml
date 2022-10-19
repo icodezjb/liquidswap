@@ -4,23 +4,22 @@ version = "0.4.1"
 upgrade_policy = "immutable"
 
 [addresses]
-liquidswap = "0x190d44266241744264b964a37b8f09863167a12d3e70cda39376cfb4e3561e12"
+liquidswap = "0xdcf3f5381c94de140d2bdf597e200cbfb3ac4ebcb7abd718e406a2d473c5de88"
 
 # Admins
-dao_admin = "0x4dd8990e4133ac30abee14bca0736988a8ec37bdef33952e99aa055289826501"
-emergency_admin = "0x4dd8990e4133ac30abee14bca0736988a8ec37bdef33952e99aa055289826501"
-fee_admin = "0x4dd8990e4133ac30abee14bca0736988a8ec37bdef33952e99aa055289826501"
+dao_admin = "0xa5dd9f5abfac2da1e0eb3f67e3d09ed97710358e03a6e73bd66f4444f176b975"
+emergency_admin = "0xa5dd9f5abfac2da1e0eb3f67e3d09ed97710358e03a6e73bd66f4444f176b975"
+fee_admin = "0xa5dd9f5abfac2da1e0eb3f67e3d09ed97710358e03a6e73bd66f4444f176b975"
 
 # Resource accounts: should be the same as @liquidswap_lp in lp_coin
-liquidswap_pool_account = "0x05a97986a9d031c4567e15b797be516910cfcb4156312482efc6a19c0a30c948"
-liquidswap_emergency_account = "0xa6d6e549b917e454464ff6c63f91386d98769ea512bc778bdaca00969f896764"
+liquidswap_pool_account = "0x1791d86161d0536c8b96bee45f1ddcda50145c438a9acc7447cff3de1e8692d6"
+liquidswap_emergency_account = "0xadecf1fb0d7d2ab8aeaed7cf4480fe073e086ab105350dd866ed61baf5ebf2a5"
 
 # Addresses for tests.
 test_coin_admin = "0x11"
 test_helpers = "0x12"
 
 test_lp_owner = "0x12"
-test_pool_addr = "0x2540b6f8a87ac1cff2de9f5f742854b448cd4521e96f840eda05e63e4e944ed6"
 
 [dependencies.LiquidswapLP]
 local = "./liquidswap_lp/"
@@ -29,16 +28,4 @@ local = "./liquidswap_lp/"
 local = "./liquidswap_init/"
 
 [dependencies.AptosFramework]
-#git = "https://github.com/aptos-labs/aptos-core.git"
-#rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
-#subdir = "aptos-move/framework/aptos-framework"
-local = "../aptos-core/aptos-move/framework/aptos-framework"
-[dependencies.UQ64x64]
-#git = "https://github.com/pontem-network/UQ64x64.git"
-#rev = "v0.3.7"
-local = "./UQ64x64"
-
-[dependencies.U256]
-#git = "https://github.com/pontem-network/U256.git"
-#rev = "v0.3.8"
-local = "U256"
+local = "../aptos-core/aptos-move/framework/aptos-framework/"

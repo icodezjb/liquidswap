@@ -28,3 +28,7 @@ Look at [section](https://docs.liquidswap.com/#security-audits) in our doc.
 
 See [LICENSE](LICENSE)
 
+### Deploy
+- (1) publish `liquidswap_init`
+- (2) call `initialize_lp_account`
+- (3) publish `liquidswap_swap`

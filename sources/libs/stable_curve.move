@@ -5,7 +5,7 @@ module liquidswap::stable_curve {
     // Some of the functions just migrated from Solidly (BaseV1-core).
     // Some we implemented outself, like coin_in.
     // Also look at all places in all contracts where the functions called and check places too and arguments.
-    use u256::u256::{Self, U256};
+    use liquidswap::u256::{Self, U256};
 
     /// We take 10^8 as we expect most of the coins to have 6-8 decimals.
     const ONE_E_8: u128 = 100000000;
