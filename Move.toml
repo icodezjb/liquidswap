@@ -29,14 +29,16 @@ local = "./liquidswap_lp/"
 local = "./liquidswap_init/"
 
 [dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-core.git"
-rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
-subdir = "aptos-move/framework/aptos-framework"
-
+#git = "https://github.com/aptos-labs/aptos-core.git"
+#rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
+#subdir = "aptos-move/framework/aptos-framework"
+local = "../aptos-core/aptos-move/framework/aptos-framework"
 [dependencies.UQ64x64]
-git = "https://github.com/pontem-network/UQ64x64.git"
-rev = "v0.3.7"
+#git = "https://github.com/pontem-network/UQ64x64.git"
+#rev = "v0.3.7"
+local = "./UQ64x64"
 
 [dependencies.U256]
-git = "https://github.com/pontem-network/U256.git"
-rev = "v0.3.8"
+#git = "https://github.com/pontem-network/U256.git"
+#rev = "v0.3.8"
+local = "U256"
