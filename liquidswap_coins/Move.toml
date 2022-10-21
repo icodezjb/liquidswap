@@ -1,0 +1,10 @@
+[package]
+name = 'LiquidswapCoins'
+version = '1.0.0'
+upgrade_policy = "immutable"
+
+[addresses]
+liquidswap = "0xdcf3f5381c94de140d2bdf597e200cbfb3ac4ebcb7abd718e406a2d473c5de88"
+
+[dependencies.AptosFramework]
+local = "../../aptos-core/aptos-move/framework/aptos-framework"
